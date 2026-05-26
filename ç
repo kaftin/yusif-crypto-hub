@@ -1,0 +1,41 @@
+const express = require('express');
+const cors = require('cors');
+require('dotenv').config();
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(cors());
+app.use(express.json());
+
+// Home route
+app.get('/', (req, res) => {
+    res.json({ message: 'Yusif Crypto Hub API is running!' });
+});
+
+// Pi authentication endpoint (demo)
+app.post('/api/pi/auth', (req, res) => {
+    const { accessToken, user } = req.body;
+    res.json({ 
+        success: true, 
+        message: 'Authentication successful',
+        user: user || { uid: 'demo-user' }
+    });
+});
+
+// Wallet analyzer endpoint
+app.get('/api/wallet/analyze/:address', (req, res) => {
+    const { address } = req.params;
+    // Demo response - za mu iya haɗa real Pi blockchain later
+    res.json({
+        address: address,
+        balance: '125.5 Pi',
+        transactions: 42,
+        lastActive: '2026-05-23'
+    });
+});
+
+// Start server
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+});

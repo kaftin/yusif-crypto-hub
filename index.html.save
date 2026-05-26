@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yusif Crypto Hub</title>
+
+  <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+
+  <style>
+    body{
+      background:#0f172a;
+      color:white;
+      font-family:Arial;
+      text-align:center;
+      padding:40px;
+    }
+
+    button{
+      background:#7c3aed;
+      color:white;
+      border:none;
+      padding:15px 30px;
+      border-radius:10px;
+      font-size:18px;
+    }
+
+    .card{
+      background:#1e293b;
+      padding:20px;
+      border-radius:15px;
+      margin-top:20sync function login(){
+
+  const scopes = ['username'];
+
+  function onIncompletePaymentFound(payment){}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yusif Crypto Hub</title>
+
+  <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+
+  <style>
+    body{
+      background:#0f172a;
+      color:white;
+      font-family:Arial;
+      text-align:center;
+      padding:40px;
+    }
+
+    button{
+      background:#7c3aed;
+      color:white;
+      border:none;
+      padding:15px 30px;
+      border-radius:10px;
+      font-size:18px;
+    }
+
+    .card{
+      background:#1e293b;
+      padding:20px;
+      border-radius:15px;
+      margin-top:20px;
+    }
+  </style>
+<
